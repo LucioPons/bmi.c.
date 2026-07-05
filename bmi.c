@@ -21,6 +21,15 @@ int main() {
     printf("18.5 a 24.9\tNormal\n");
     printf("25.0 a 29.9\tSobrepeso\n");
     printf(">=30\t\tObesidad\n");
+ if (imc < 18.5) {
+        printf("Condicion: Bajo peso\n");
+    } else if (imc < 25.0) {
+        printf("Condicion: Normal\n");
+    } else if (imc < 30.0) {
+        printf("Condicion: Sobrepeso\n");
+    } else {
+        printf("Condicion: Obesidad\n");
+ }
 
     return 0;
 }
